@@ -1,0 +1,33 @@
+.background-left {
+  background: linear-gradient(180deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+  position: absolute;
+  left: -5%;
+  width: 25%;
+  height: 90%;
+  z-index: -1;
+  @media screen and (max-width: 768px){
+    width: 75%;
+    height: 50%;
+    left: -25%;
+  }
+}
+
+.background-right {
+  background-color: hsl(270, 20%, 96%);
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 25%;
+  height: 90%;
+  z-index: -1;
+  @media screen and (max-width: 768px){
+    width: 75%;
+    height: 50%;
+    right: -25%;
+    top: 100%;
+  }
+}

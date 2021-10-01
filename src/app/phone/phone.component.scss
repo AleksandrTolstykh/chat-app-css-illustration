@@ -1,0 +1,138 @@
+.mat-card {
+  border-radius: 30px;
+  font-family: "Rubik";
+  width: 300px;
+
+  .mat-card-header {
+    background: linear-gradient(270deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 10px;
+
+    .top {
+      background: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      position: absolute;
+      left: 25%;
+      top: 0;
+      width: 50%;
+      height: 4%;
+    }
+
+    .avatar {
+      background-image: url("../../assets/avatar.jpg");
+      background-size: cover;
+      border: 3px hsl(276, 100%, 81%) solid;
+    }
+
+    .mat-card-title {
+      color: hsl(0, 0%, 100%);
+      font-weight: 500;
+    }
+
+    .mat-card-subtitle {
+      color: hsl(276, 100%, 81%);
+      font-weight: 400;
+    }
+
+    .back-button {
+      background-color: transparent;
+      background-image: url("../../assets/icon-left-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .mat-card-content {
+    background-color: hsl(270, 20%, 96%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px;
+
+    .left-message-container {
+      display: flex;
+      justify-content: flex-start;
+
+      .left-message {
+        background-color: hsl(276, 100%, 81%);
+        border-radius: 15px;
+        color: hsl(276, 55%, 52%);
+        margin: 5px 0;
+        padding: 5px;
+        max-width: 60%;
+      }
+    }
+
+    .right-message-container {
+      display: flex;
+      justify-content: flex-end;
+
+      .right-message {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        color: hsl(271, 15%, 43%);
+        margin: 5px 0;
+        padding: 10px;
+        max-width: 60%;
+      }
+    }
+
+    .image-block {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        border-radius: 10px;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .radio-block {
+      background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+      border-radius: 15px;
+      color: hsl(0, 0%, 100%);
+      margin: 5px 0;
+      padding: 5px;
+      max-width: 70%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .radio-button {
+        border: 1px hsl(289, 100%, 72%) solid;
+        width: 20px;
+        height: 20px;
+      }
+
+      h1 {
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+
+    .message {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 30px;
+      color: hsl(206, 6%, 79%);
+      font-weight: 400;
+      margin: 5px 0;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .send-button {
+        background-color: hsl(271, 36%, 24%);
+        background-image: url("../../assets/icon-right-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div {
+    margin: 50px 150px;
+    width: 30%;
+    @media screen and (max-width: 768px){
+      margin: 15px;
+      margin-left: 100px;
+      width: 90%;
+    }
+  }
+
+  h1 {
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+  }
+
+  p {
+    color: hsl(270, 7%, 64%);
+    font-weight: 400;
+  }
+
+  app-phone {
+    @media screen and (max-width: 768px){
+      margin-top: 250px;
+      margin-left: 100px;
+    }
+  }
+}
